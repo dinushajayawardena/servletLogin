@@ -1,7 +1,9 @@
 package com.servletmvc.controller;
 
 import java.io.IOException;
-import java.sql.ResultSet;
+//import java.sql.ResultSet;
+
+import java.util.concurrent.*;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -38,14 +40,20 @@ public class AddVehicle extends HttpServlet {
 		String newVyear = request.getParameter("cmbvyear");
 		String newVowner = request.getParameter("txtvowner");
 		
-		System.out.println(newVno + "" + newVmake + "" + newVmodel + "" + newVyear + "" + newVowner);
+		//System.out.println(newVno + "" + newVmake + "" + newVmodel + "" + newVyear + "" + newVowner);
 		
 		new AddDAO().AddVehicle(newVno, newVmake, newVmodel, newVyear, newVowner);
 		
-//		vehicle v;
-//		ResultSet m;
+		try {
+			
+			TimeUnit.SECONDS.sleep(1);
+			
+			response.sendRedirect("Success.jsp");
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		
-		//m = gc.rs3;
 	}
 
 }

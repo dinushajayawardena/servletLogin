@@ -15,7 +15,7 @@
 			<tr><td>Enter the Vehicle Number</td><td><input type="text" name="vno"></td></tr>
 			<tr><td><input type="submit" value="Search"></td>
 			<td><input type="reset" value="Clear"></td></tr>
-			<td><a href="AddNew.jsp"><input type="button" value="Add New Vehicle"></a></td></tr>			
+			<tr><td><a href="AddNew.jsp"><input type="button" value="Add New Vehicle"></a></td></tr>			
 		</table>
 	</form>
 </div>
