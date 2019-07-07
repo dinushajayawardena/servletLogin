@@ -9,8 +9,9 @@ import java.sql.SQLException;
 public class GetConnection {
 
 	private static Connection conn;
-	public PreparedStatement ps,ps2;
+	public PreparedStatement ps,ps2,ps3;
 	public ResultSet rs,rs2;
+	public int rs3;
 	
 	public static Connection getMySQLConnection() {
 		

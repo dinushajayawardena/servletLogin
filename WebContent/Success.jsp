@@ -8,13 +8,14 @@
 <link href="style_success.css" type="text/css" rel="stylesheet"> 
 </head>
 <body>
-<h2>Welcome User ....<%request.getParameter("uname");%></h2>
+<h2>Welcome User ${uname}</h2>
 <div class="main_background">
 	<form action="vehicle.show" method="post">
 		<table>
 			<tr><td>Enter the Vehicle Number</td><td><input type="text" name="vno"></td></tr>
 			<tr><td><input type="submit" value="Search"></td>
-			<td><input type="reset" value="Clear"></td></tr>			
+			<td><input type="reset" value="Clear"></td></tr>
+			<td><a href="AddNew.jsp"><input type="button" value="Add New Vehicle"></a></td></tr>			
 		</table>
 	</form>
 </div>
