@@ -5,14 +5,18 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel = "stylesheet" href="LocalStyle_Login.css">
 </head>
 <body>
+
+<div class="main_background">
 
 <h2>Vehicle Details for ${vehicle.vehicle_no}</h2>
 
 <form>
 	
-	<table>
+	<table class="table table-dark">
 		
 		<tr><td>ID: </td><td>${vehicle.vehicle_id}</td></tr>
 		<tr><td>Make By: </td><td>${vehicle.vehicle_make}</td></tr>
@@ -22,7 +26,9 @@
 		
 		
 	</table>
+	
+	<a href="Success.jsp"><input type="button" value="Back" class="btn btn-primary" style="margin-left:43%"></a>
 </form>
-
+</div>
 </body>
 </html>
